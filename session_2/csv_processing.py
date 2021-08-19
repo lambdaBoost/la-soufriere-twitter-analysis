@@ -3,6 +3,13 @@
 Created on Mon Aug  9 13:47:36 2021
 
 @author: ahall
+
+Completed version of the script from session 2
+Takes a directory and trawls through it to find all relevant csv files
+Performs processing on the files to make them useable for processing
+writes the processed file to disk
+
+To use this script, alter the objects in lines 19-28 (ie the global variables defined in uppercase)
 """
 import pandas as pd
 import numpy as np
@@ -18,6 +25,8 @@ DATA_PATH = 'C:\\Users\\ahall\\Documents\\projects\\la-soufriere-sentiment-analy
 RETWEET_FILE_IDENTIFIER = '*LaSouf_RTs.csv'
 #string which can be used to identify the tweet file names
 TWEET_FILE_IDENTIFIER = '*LaSouf_noRTs.csv'
+
+
 
 
 def get_data(path, identifier):
